@@ -26,9 +26,9 @@ public class exercises {
     }
     public static void sillyNumbers(){
         int i, j;
-        for (i = 3; i < 10; i++){
-            for (j = 1; j < i; j++){
-                System.out.print(j);
+        for (i = 0; i < 10; i++){
+            for (j = 0; j < i; j++){
+                System.out.print(i);
             }
         }
     }
