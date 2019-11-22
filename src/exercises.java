@@ -25,11 +25,32 @@ public class exercises {
         return sum;
     }
     public static void sillyNumbers(){
-        int i, j;
-        for (i = 0; i < 10; i++){
-            for (j = 0; j < 3; j++){
-                System.out.print(i);
+        int i, j, k;
+        for (k = 0; k <= 3; k++){
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 3; j++) {
+                    System.out.print(i);
+                }
             }
+        System.out.println();
+        }
+    }
+    public static void sillyNumbers2(){
+        int i, j, k;
+        for (k = 0; k <= 3; k++) {
+            for (i = 9; i >= 0; i--) {
+                for (j = 0; j < i; j++) {
+                    System.out.print(i);
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void dollarsAndStars() {
+        int i, j;
+        for (i = 0; i < 7; i++) {         // loop creates the 7 lines
+
+
         }
     }
 
@@ -45,7 +66,14 @@ public class exercises {
         System.out.println(sumDigits(5));
         System.out.println(sumDigits(8));
         System.out.println(sumDigits(11));
+        System.out.println();
 
         sillyNumbers();
+        System.out.println();
+
+        sillyNumbers2();
+        System.out.println();
+
+        dollarsAndStars();
     }
 }
