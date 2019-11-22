@@ -49,8 +49,10 @@ public class exercises {
     public static void dollarsAndStars() {
         int i, j;
         for (i = 0; i < 7; i++) {         // loop creates the 7 lines
-
-
+            for(j = 6; j >=i; j--){
+                System.out.print("$");
+            }
+            System.out.println();
         }
     }
 
