@@ -37,7 +37,7 @@ public class exercises {
     }
     public static void sillyNumbers2(){
         int i, j, k;
-        for (k = 0; k <= 3; k++) {
+        for (k = 0; k <= 3; k++) {          //creates the 4 lines
             for (i = 9; i >= 0; i--) {
                 for (j = 0; j < i; j++) {
                     System.out.print(i);
@@ -47,10 +47,22 @@ public class exercises {
         }
     }
     public static void dollarsAndStars() {
-        int i, j;
-        for (i = 0; i < 7; i++) {         // loop creates the 7 lines
-            for(j = 6; j >=i; j--){
+        int i, j, k, m, a, b;
+        for (i = 1; i < 8; i++) {
+            for (k = i -1; k > 0; k--){
+                System.out.print("**");
+            }
+            for (j = 7; j >=i; j--){   // outputs $$$$$$, $$$$$, $$$$, $$$ etc.
+                System.out.print("$"); 
+            }
+            for (m = 2; m <= 14; m += 2){
+                System.out.println("**");
+            }
+            for (a = 7; a >= i; a--){
                 System.out.print("$");
+            }
+            for (b = i -1; b > 0; b--){
+                System.out.print("**");
             }
             System.out.println();
         }
