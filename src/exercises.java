@@ -55,7 +55,7 @@ public class exercises {
             for (j = 7; j >=i; j--){   // outputs $$$$$$, $$$$$, $$$$, $$$ etc.
                 System.out.print("$"); 
             }
-            for (m = 2; m <= 14; m += 2){
+            for (m = 1; m <= 7-j; m++){
                 System.out.println("**");
             }
             for (a = 7; a >= i; a--){
