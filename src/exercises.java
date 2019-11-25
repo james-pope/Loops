@@ -16,11 +16,10 @@ public class exercises {
         return year;
     }
     public static int sumDigits(int n){
-        int count = 1;  
-        int sum = 1;    //n is postive, so if n =1 it will still return 1
-        while (count < n){
-            count++;
-            sum += count;
+        int sum = 0;
+        while (n != 0){
+            sum += n %10;
+            n = n/10;
         }
         return sum;
     }
@@ -80,8 +79,8 @@ public class exercises {
         System.out.println();
 
         System.out.println(sumDigits(5));
-        System.out.println(sumDigits(8));
         System.out.println(sumDigits(11));
+        System.out.println(sumDigits(123));
         System.out.println();
 
         sillyNumbers();
