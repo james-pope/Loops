@@ -21,12 +21,11 @@ public class Factorial {
     }
     public static void calcEx(int x){
         double e = 1, olde =0;
-        int base =1;
         int n = 1;
-        double numerator = Math.pow(base, x);
         while (e - olde >.001){
-           olde = e;
-           e += numerator/ (double)calcFactorial(base)
+            olde = e;
+            e += Math.pow(x, n) / (double)calcFactorial(n);
+            n++;
         }
         System.out.printf("e is %2.3f \n", e);
     }
